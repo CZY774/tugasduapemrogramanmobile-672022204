@@ -26,7 +26,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Notifications
 import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -185,15 +184,6 @@ fun HomeScreen(receivedFullName: String) {
                         .padding(20.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Icon(
-                        imageVector = Icons.Rounded.Notifications,
-                        contentDescription = "Notification",
-                        tint = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.size(36.dp)
-                    )
-
-                    Spacer(modifier = Modifier.height(16.dp))
-
                     Text(
                         text = "It's great to see you again!",
                         style = MaterialTheme.typography.bodyLarge,
@@ -204,10 +194,10 @@ fun HomeScreen(receivedFullName: String) {
                     Spacer(modifier = Modifier.height(8.dp))
 
                     Text(
-                        text = "Mobile Programming - Assignment 2",
-                        style = MaterialTheme.typography.labelMedium,
+                        text = "Created by Cornelius Yoga - 672022204",
+                        style = MaterialTheme.typography.labelSmall,
                         textAlign = TextAlign.Center,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
                     )
                 }
             }
